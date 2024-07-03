@@ -1,0 +1,12 @@
+C:\Workspace\signalr-chat\Chat.Shared\bin\Debug\net8.0\Chat.Shared.deps.json
+C:\Workspace\signalr-chat\Chat.Shared\bin\Debug\net8.0\Chat.Shared.dll
+C:\Workspace\signalr-chat\Chat.Shared\bin\Debug\net8.0\Chat.Shared.pdb
+C:\Workspace\signalr-chat\Chat.Shared\obj\Debug\net8.0\Chat.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\signalr-chat\Chat.Shared\obj\Debug\net8.0\Chat.Shared.AssemblyInfoInputs.cache
+C:\Workspace\signalr-chat\Chat.Shared\obj\Debug\net8.0\Chat.Shared.AssemblyInfo.cs
+C:\Workspace\signalr-chat\Chat.Shared\obj\Debug\net8.0\Chat.Shared.csproj.CoreCompileInputs.cache
+C:\Workspace\signalr-chat\Chat.Shared\obj\Debug\net8.0\Chat.Shared.sourcelink.json
+C:\Workspace\signalr-chat\Chat.Shared\obj\Debug\net8.0\Chat.Shared.dll
+C:\Workspace\signalr-chat\Chat.Shared\obj\Debug\net8.0\refint\Chat.Shared.dll
+C:\Workspace\signalr-chat\Chat.Shared\obj\Debug\net8.0\Chat.Shared.pdb
+C:\Workspace\signalr-chat\Chat.Shared\obj\Debug\net8.0\ref\Chat.Shared.dll

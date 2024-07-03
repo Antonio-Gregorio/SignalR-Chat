@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Antonio Gregorio\\RiderProjects\\WebApplication1\\Server\\Server.csproj": {}
+    "C:\\Workspace\\signalr-chat\\Server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Antonio Gregorio\\RiderProjects\\WebApplication1\\Server\\Server.csproj": {
+    "C:\\Workspace\\signalr-chat\\Chat.Shared\\Chat.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Antonio Gregorio\\RiderProjects\\WebApplication1\\Server\\Server.csproj",
-        "projectName": "Server",
-        "projectPath": "C:\\Users\\Antonio Gregorio\\RiderProjects\\WebApplication1\\Server\\Server.csproj",
+        "projectUniqueName": "C:\\Workspace\\signalr-chat\\Chat.Shared\\Chat.Shared.csproj",
+        "projectName": "Chat.Shared",
+        "projectPath": "C:\\Workspace\\signalr-chat\\Chat.Shared\\Chat.Shared.csproj",
         "packagesPath": "C:\\Users\\Antonio Gregorio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Antonio Gregorio\\RiderProjects\\WebApplication1\\Server\\obj\\",
+        "outputPath": "C:\\Workspace\\signalr-chat\\Chat.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Antonio Gregorio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Antonio Gregorio\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,11 +32,63 @@
           "warnAsError": [
             "NU1605"
           ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Workspace\\signalr-chat\\Server\\Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Workspace\\signalr-chat\\Server\\Server.csproj",
+        "projectName": "Server",
+        "projectPath": "C:\\Workspace\\signalr-chat\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\Antonio Gregorio\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\signalr-chat\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Antonio Gregorio\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
         },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Workspace\\signalr-chat\\Chat.Shared\\Chat.Shared.csproj": {
+                "projectPath": "C:\\Workspace\\signalr-chat\\Chat.Shared\\Chat.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
         }
       },
       "frameworks": {

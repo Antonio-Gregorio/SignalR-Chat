@@ -1,20 +1,44 @@
-﻿using Microsoft.AspNetCore.SignalR.Client;
+﻿using CLI.Enums;
+using CLI.Signal;
+using CLI.views;
 
-Console.WriteLine("CHAT TAHC");
+SignalRAdapter hub = new SignalRAdapter("http://localhost:5118/chat-hub");
 
-var client = new HubConnectionBuilder().WithUrl("http://localhost:5118/chat-hub").Build();
+await hub.StartAdapter();
 
-client.On<string>("ReceiveMessage", obj => {
-    Console.WriteLine(obj);
-});
+await hub.SetUserName(MenuView.Nickname());
 
-await client.StartAsync();
+string? chatId = null;
+
+RoomOption roomOptionSelected = MenuView.JoinOrCreateRoom();
+
+if (roomOptionSelected == RoomOption.Create)
+{
+    chatId = await hub.CreateChat();
+}
+else
+{
+    chatId = MenuView.JoinRoom();
+}
+
+await hub.JoinChat(chatId);
+
+MenuView.InfoRoom(chatId);
 
 while (true)
 {
-    var message = Console.ReadLine();
-    if (message?.Length > 0)
-    {
-        await client.SendAsync("BroadcastMessage", message);
-    }
+        var message = Console.ReadLine();
+        ClearCurrentConsoleLine();
+        
+        if (message?.Length > 0)
+        {
+            await hub.Send(message);
+        }
+}
+
+void ClearCurrentConsoleLine()
+{
+    Console.CursorTop--;
+    Console.Write("".PadRight(Console.WindowWidth, ' '));
+    Console.CursorLeft = 0;
 }

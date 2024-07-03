@@ -926,6 +926,16 @@
         "runtime": {
           "lib/net8.0/TakasakiStudio.Lina.Utils.dll": {}
         }
+      },
+      "Chat.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Chat.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Chat.Shared.dll": {}
+        }
       }
     }
   },
@@ -2463,10 +2473,16 @@
         "takasakistudio.lina.utils.2.1.4.nupkg.sha512",
         "takasakistudio.lina.utils.nuspec"
       ]
+    },
+    "Chat.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Chat.Shared/Chat.Shared.csproj",
+      "msbuildProject": "../Chat.Shared/Chat.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Chat.Shared >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.6",
       "Microsoft.AspNetCore.SignalR.Client >= 8.0.6",
       "Swashbuckle.AspNetCore >= 6.4.0",
@@ -2479,38 +2495,35 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Antonio Gregorio\\RiderProjects\\WebApplication1\\Server\\Server.csproj",
+      "projectUniqueName": "C:\\Workspace\\signalr-chat\\Server\\Server.csproj",
       "projectName": "Server",
-      "projectPath": "C:\\Users\\Antonio Gregorio\\RiderProjects\\WebApplication1\\Server\\Server.csproj",
+      "projectPath": "C:\\Workspace\\signalr-chat\\Server\\Server.csproj",
       "packagesPath": "C:\\Users\\Antonio Gregorio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Antonio Gregorio\\RiderProjects\\WebApplication1\\Server\\obj\\",
+      "outputPath": "C:\\Workspace\\signalr-chat\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Antonio Gregorio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Antonio Gregorio\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Workspace\\signalr-chat\\Chat.Shared\\Chat.Shared.csproj": {
+              "projectPath": "C:\\Workspace\\signalr-chat\\Chat.Shared\\Chat.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {

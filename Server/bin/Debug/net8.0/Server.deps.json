@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "Server/1.0.0": {
         "dependencies": {
+          "Chat.Shared": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.6",
           "Microsoft.AspNetCore.SignalR.Client": "8.0.6",
           "Swashbuckle.AspNetCore": "6.4.0",
@@ -497,6 +498,11 @@
             "fileVersion": "2.1.4.0"
           }
         }
+      },
+      "Chat.Shared/1.0.0": {
+        "runtime": {
+          "Chat.Shared.dll": {}
+        }
       }
     }
   },
@@ -869,6 +875,11 @@
       "sha512": "sha512-dcbo3ciWYS1uWjVTt+72NKmYXXuBWzFrAowGZAPFhnClpD6yTIB3NII1tLEGowp9oW0BRn81KEBMIT9M1UqpGw==",
       "path": "takasakistudio.lina.utils/2.1.4",
       "hashPath": "takasakistudio.lina.utils.2.1.4.nupkg.sha512"
+    },
+    "Chat.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

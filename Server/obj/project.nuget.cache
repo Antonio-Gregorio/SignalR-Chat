@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KVLwp8ARWig=",
+  "dgSpecHash": "jS6s3ox7+mqPddAAItQv/Kbf8Fk+5wbdEvLcTMF2lcb2sb1aq1fEi/5mPZZ7Rj4/lgyHDFpPUbsPfqk6+6/Pyw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Antonio Gregorio\\RiderProjects\\WebApplication1\\Server\\Server.csproj",
+  "projectFilePath": "C:\\Workspace\\signalr-chat\\Server\\Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Antonio Gregorio\\.nuget\\packages\\castle.core\\5.0.0\\castle.core.5.0.0.nupkg.sha512",
     "C:\\Users\\Antonio Gregorio\\.nuget\\packages\\config.net\\5.2.0\\config.net.5.2.0.nupkg.sha512",
